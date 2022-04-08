@@ -26,14 +26,14 @@ nav {
 }
 nav a{
     color: black;
-    padding: 14px 20px;
+    padding: 14px 15px;
     font-size: larger;
     text-decoration: none;
     text-align: center;
 }
 
 main {
-    height: 60vh;
+    height: 70vh;
     display: flex;
     flex-wrap: wrap;
 }
@@ -41,6 +41,7 @@ aside {
      display: flex;
      flex-flow: column wrap;
      background-color: rgb(26, 67, 155);
+     color: #fff;
      justify-content: center;
      padding: 10px;
 }
@@ -48,17 +49,23 @@ aside {
 section {
     display: flex;
     flex-direction: column;
-    
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
     flex-grow: 2;
+}
+#img {
+    height: 35vh;
 }
 .label {
     font-weight: bold;
 }
-
+#contact-details {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 footer{
-  height: 20vh;
+  height: 15vh;
   width: 100%;
   text-align: center;
   background: #13293d;
@@ -66,11 +73,39 @@ footer{
   margin-top: auto;
 }
 @media screen and (max-width: 992px) {
-  
+    main {
+        display: block;
+        flex-grow: 0;
+    }
+    footer{
+        margin-top: 10%;
+    }
 }
 @media screen and (max-width: 768px) {
-  
+    main {
+        display: block;
+        flex-grow: 0;
+    }
+    footer{
+        margin-top: 10%;
+    }
 }
 @media screen and (max-width: 576px) {
-  
+    header {
+        padding: 10px;
+    }
+    main {
+        display: block;
+        flex-grow: 0;
+    }
+    section {
+        display: flex;
+        flex-direction:column;
+        justify-content: center;
+    }
+    footer{
+        margin-top: 10%;
+        margin-bottom: 0;
+        height: 20vh;
+    }
 }
